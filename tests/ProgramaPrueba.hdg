@@ -1,0 +1,47 @@
+/**
+ En matemáticas, la palabra capicúa
+ se refiere a cualquier número que se lee igual 
+ de izquierda a derecha que de derecha a izquierda
+ */
+
+class A {
+
+	static void main() {
+	
+		int x;
+		(System.printS("Ingrese un numero: "));
+		x = (SystemIO.readNumero());
+		
+		if (esCapicua(x))
+			(System.printS("El numero es capicua"));
+		else 
+			(System.printS("El numero NO es capicua"));
+		
+		
+	}
+	
+	static boolean esCapicua(int n) {
+		return (invertir(n)==n);
+	}
+	
+	static int invertir(int n) {
+		int rta;
+		rta = 0;
+		while (n!=0) {
+			rta = rta*10 + (n % 10);
+			n = n / 10;
+		}
+		return rta;
+	}
+
+}
+
+class SystemIO extends System {
+
+	
+	static int readNumero() {
+
+		return (System.readInt());
+	}
+
+}

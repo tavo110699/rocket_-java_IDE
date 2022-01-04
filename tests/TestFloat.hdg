@@ -1,0 +1,16 @@
+class TestFloat { 
+
+     static void main() { 
+
+       
+         float a,b,c;
+         a = 1.0;
+         b = 5.1;
+        c = a+b;
+		(System.printFloat(c));
+
+
+		
+         
+     }
+}
